@@ -1,0 +1,36 @@
+<div class="row mbn-30">
+    <!-- Revenue Statistics Chart Start -->
+    <div class="col-md-12 mb-30">
+        <div class="box">
+            <div class="box-head">
+                <h4 class="title">ایجاد کاربر</h4>
+            </div>
+            <div class="box-body">
+                {{#if error}}
+                    <div class="alert alert-danger" role="alert">
+                        <p><i class="zmdi zmdi-info"></i> {{ error }}</p>
+                    </div>
+                {{/if}}
+
+                {{#if success}}
+                    <div class="alert alert-success" role="alert">
+                        <p><i class="zmdi zmdi-info"></i> {{ success }}</p>
+                    </div>
+                {{/if}}
+                <form action="/admin/users/store" method="post">
+                    <div class="col-12 mb-15"><input type="text" class="form-control" placeholder="نام و نام خانوادگی" name="full_name"></div>
+                    <div class="col-12 mb-15"><input type="email" class="form-control" placeholder="ایمیل" name="email"></div>
+                    <div class="col-12 mb-15"><input type="password" class="form-control" placeholder="پسورد" name="pass"></div>
+                    <div class="col-12 mb-15">
+                        <select name="role" class="form-control">
+                            <option value="0">کاربر عادی</option>
+                            <option value="1">مدیر</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-danger w-100 mt-10">ذخیره سازی</button>
+                </form>
+            </div>
+        </div>
+    </div><!-- Revenue Statistics Chart End -->
+</div>

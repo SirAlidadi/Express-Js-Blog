@@ -1,0 +1,41 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+    "gravatar": "^1.8.2",
+    "jalali-moment": "^3.3.10",
+    "module-alias": "^2.2.2",
+    "mysql2": "^2.3.3",
+    "translate-google": "^1.5.0",
+    "validatorjs": "^3.22.1"
+  },
+  "_moduleAliases": {
+    "@root": "app/",
+    "@database": "database/",
+    "@controllers": "app/controllers/",
+    "@middlewares": "app/middlewares/",
+    "@models": "app/models/",
+    "@routes": "app/routes/",
+    "@services": "app/services/",
+    "@start": "app/start/",
+    "@views": "app/views/"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
