@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ecb8c152-4e44-403e-9927-7f90277f2b28" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="22C94HHcBQmx1rckyhZ4VwCnV8Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/auth" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\JS\Blog\app\views\auth" />
+      <recent name="D:\Projects\JS\Blog\app\views\admin\users" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\JS\Blog\app\views\admin\comments" />
+      <recent name="D:\Projects\JS\Blog\app\views\admin\dashboard" />
+      <recent name="D:\Projects\JS\Blog\app\views\admin\posts" />
+      <recent name="D:\Projects\JS\Blog\app\controllers\admin\dashboard" />
+      <recent name="D:\Projects\JS\Blog\app\controllers\admin\posts" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ecb8c152-4e44-403e-9927-7f90277f2b28" name="Changes" comment="" />
+      <created>1639330509652</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639330509652</updated>
+      <workItem from="1639330511040" duration="453000" />
+      <workItem from="1639330976028" duration="181000" />
+      <workItem from="1639331165859" duration="752000" />
+      <workItem from="1639380418820" duration="69000" />
+      <workItem from="1639380495452" duration="6750000" />
+      <workItem from="1639401970391" duration="1704000" />
+      <workItem from="1639410532702" duration="2669000" />
+      <workItem from="1639515544309" duration="1767000" />
+      <workItem from="1639578746469" duration="8424000" />
+      <workItem from="1639671536133" duration="229000" />
+      <workItem from="1639671776319" duration="71000" />
+      <workItem from="1639671856743" duration="8747000" />
+      <workItem from="1639727874356" duration="7366000" />
+      <workItem from="1639751695892" duration="3000" />
+      <workItem from="1639832491039" duration="712000" />
+      <workItem from="1639833681029" duration="801000" />
+      <workItem from="1639834547227" duration="2962000" />
+      <workItem from="1640007098855" duration="176000" />
+      <workItem from="1640007324312" duration="912000" />
+      <workItem from="1640008307255" duration="2972000" />
+      <workItem from="1640018772099" duration="66000" />
+      <workItem from="1640018845620" duration="3000" />
+      <workItem from="1640094610825" duration="1057000" />
+      <workItem from="1640200804078" duration="605000" />
+      <workItem from="1640255756755" duration="8904000" />
+      <workItem from="1640430534167" duration="9949000" />
+      <workItem from="1640536682592" duration="4290000" />
+      <workItem from="1640584073632" duration="638000" />
+      <workItem from="1640585875993" duration="3415000" />
+      <workItem from="1640596525383" duration="5916000" />
+      <workItem from="1640763774364" duration="3835000" />
+      <workItem from="1640768043164" duration="3492000" />
+      <workItem from="1640867507047" duration="2327000" />
+      <workItem from="1640877685215" duration="3762000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
