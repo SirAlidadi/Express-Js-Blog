@@ -1,0 +1,61 @@
+
+<div class="row mbn-30">
+    <!-- Revenue Statistics Chart Start -->
+    <div class="col-md-12 mb-30">
+        <div class="box">
+            <div class="box-head">
+                <a class="btn btn-primary w-100" href="/admin/posts/create">ایجاد مطلب جدید</a>
+            </div>
+            <div class="box-body">
+                <h4 class="mb-20">لیست مطالب</h4>
+                <table class="table">
+                    {{#if deleteMessage}}
+                        <div class="alert alert-success" role="alert">
+                            <p><i class="zmdi zmdi-info"></i> {{ deleteMessage }}</p>
+                        </div>
+                    {{/if}}
+
+                    {{#if deleteMessageError}}
+                        <div class="alert alert-danger" role="alert">
+                            <p><i class="zmdi zmdi-info"></i> {{ deleteMessageError }}</p>
+                        </div>
+                    {{/if}}
+
+                    {{#if findMessageError}}
+                        <div class="alert alert-danger" role="alert">
+                            <p><i class="zmdi zmdi-info"></i> {{ findMessageError }}</p>
+                        </div>
+                    {{/if}}
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>عنوان</th>
+                        <th>نویسنده</th>
+                        <th>تاریخ انتشار</th>
+                        <th>تعداد بازدید</th>
+                        <th>عملیات</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{#each posts}}
+                        <tr>
+                            <th>{{this.id}}</th>
+                            <td>{{this.title}}</td>
+                            <td>{{this.full_name}}</td>
+                            <td>{{this.jalali_date}}</td>
+                            <td>{{this.views}}</td>
+                            <td>
+                                <a href="/admin/posts/edit/{{ this.id }}"><i class="ti-pencil"></i></a>
+                                <a href="/admin/posts/delete/{{ this.id }}"><i class="ti-close"></i></a>
+                            </td>
+
+                        </tr>
+                    {{/each}}
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div><!-- Revenue Statistics Chart End -->
+</div>

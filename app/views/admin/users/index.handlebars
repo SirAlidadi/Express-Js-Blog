@@ -1,0 +1,51 @@
+
+<div class="row mbn-30">
+    <!-- Revenue Statistics Chart Start -->
+    <div class="col-md-12 mb-30">
+        <div class="box">
+            <div class="box-head">
+                <a class="btn btn-primary w-100" href="/admin/users/create">ایجاد کاربر جدید</a>
+            </div>
+            <div class="box-body">
+                <h4 class="mb-20">لیست کاربران</h4>
+                <table class="table">
+                    {{#if error}}
+                        <div class="alert alert-danger" role="alert">
+                            <p><i class="zmdi zmdi-info"></i> {{ this.error }}</p>
+                        </div>
+                    {{/if}}
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>نام و نام خانوادگی</th>
+                        <th>ایمیل</th>
+                        <th>تاریخ عضویت</th>
+                        <th>نقش کاربری</th>
+                        <th>عملیات</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{#each users}}
+                        <tr>
+                            <th>{{this.id}}</th>
+                            <td>{{this.full_name}}</td>
+                            <td>{{this.email}}</td>
+                            <td>{{this.jalali_date}}</td>
+                            <td>{{#whatsRole this.role}}{{/whatsRole}}</td>
+
+                            <td>
+                                {{#isAdmin this.role}}
+                                    <a href="/admin/users/edit/{{../this/id}}"><i class="ti-pencil"></i></a>
+                                    <a href="/admin/users/delete/{{../this/id}}"><i class="ti-close"></i></a>
+                                {{/isAdmin}}
+                            </td>
+
+                        </tr>
+                    {{/each}}
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div><!-- Revenue Statistics Chart End -->
+</div>

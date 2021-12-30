@@ -1,0 +1,51 @@
+<div class="row mbn-30">
+    <!-- Revenue Statistics Chart Start -->
+    <div class="col-md-12 mb-30">
+        <div class="box">
+            <div class="box-body">
+                <h4 class="mb-20">دیدگاه ها</h4>
+                {{#if success}}
+                    <div class="alert alert-success" role="alert">
+                        <p><i class="zmdi zmdi-info"></i> {{ success }}</p>
+                    </div>
+                {{/if}}
+
+                {{#if error}}
+                    <div class="alert alert-danger" role="alert">
+                        <p><i class="zmdi zmdi-info"></i> {{ error }}</p>
+                    </div>
+                {{/if}}
+                <table class="table">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>نویسنده</th>
+                        <th>دیدگاه</th>
+                        <th>در پاسخ به</th>
+                        <th>ارسال شده</th>
+                        <th>عملیات</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{#each comments }}
+                        <tr class="{{#isActive this.status}}{{/isActive}}">
+                            <td>
+                                <img class="avatar avatar-sm  d-inline" src="{{ this.avatar }}" alt="">
+                                <span class="mr-15">{{ this.full_name }}</span>
+                            </td>
+                            <td>{{ this.comment }}</td>
+                            <td>کیوان علی محمدی</td>
+                            <td>{{ this.perCreated_at }}</td>
+                            <td>
+                                <a href="/admin/comments/remove/{{ this.id }}"><i class="ti-trash"></i></a>
+                                <a href="/admin/comments/active/{{ this.id }}"><i class="ti-check"></i></a>
+                                <a href="/admin/comments/disable/{{ this.id }}"><i class="ti-minus"></i></a>
+                            </td>
+                        </tr>
+                    {{/each}}
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div><!-- Revenue Statistics Chart End -->
+</div>

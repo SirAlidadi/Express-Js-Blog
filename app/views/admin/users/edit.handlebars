@@ -1,0 +1,35 @@
+<div class="row mbn-30">
+    <!-- Revenue Statistics Chart Start -->
+    <div class="col-md-12 mb-30">
+        <div class="box">
+            <div class="box-head">
+                <h4 class="title">ویرایش کاربر</h4>
+            </div>
+            <div class="box-body">
+                {{#if error}}
+                    <div class="alert alert-danger" role="alert">
+                        <p><i class="zmdi zmdi-info"></i> {{ error }}</p>
+                    </div>
+                {{/if}}
+
+                {{#if success}}
+                    <div class="alert alert-success" role="alert">
+                        <p><i class="zmdi zmdi-info"></i> {{ success }}</p>
+                    </div>
+                {{/if}}
+                <form action="/admin/users/update/{{ user.id }}" method="post">
+                    <div class="col-12 mb-15"><input value="{{ user.full_name }}" type="text" class="form-control" placeholder="نام و نام خانوادگی" name="full_name"></div>
+                    <div class="col-12 mb-15"><input value="{{ user.email }}" type="email" class="form-control" placeholder="ایمیل" name="email"></div>
+                    <div class="col-12 mb-15">
+                        <select name="role" class="form-control">
+                            <option {{#isRole 1}} selected {{/isRole}} value="1">مدیر</option>
+                            <option {{#isRole 0}} selected {{/isRole}} value="0">کاربر عادی</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-danger w-100 mt-10">ذخیره سازی</button>
+                </form>
+            </div>
+        </div>
+    </div><!-- Revenue Statistics Chart End -->
+</div>

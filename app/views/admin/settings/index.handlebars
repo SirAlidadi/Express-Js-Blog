@@ -1,0 +1,44 @@
+<div class="row mbn-30">
+    <!-- Revenue Statistics Chart Start -->
+    <div class="col-md-12 mb-30">
+        <div class="box">
+            <div class="box-head">
+                <h4 class="title">تنظیمات</h4>
+            </div>
+            <div class="box-body">
+                {{#if error}}
+                    <div class="alert alert-danger" role="alert">
+                        <p><i class="zmdi zmdi-info"></i> {{ error }}</p>
+                    </div>
+                {{/if}}
+
+                {{#if success}}
+                    <div class="alert alert-success" role="alert">
+                        <p><i class="zmdi zmdi-info"></i> {{ success }}</p>
+                    </div>
+                {{/if}}
+                <form action="/admin/settings/store" method="post" class="row">
+                    <div class="col-6 mb-15"><input name="site_title" value="{{ options.site_title }}" type="text" class="form-control" placeholder="عنوان وب سایت"></div>
+                    <div class="col-6 mb-15"><input name="post_count" value="{{ options.post_count }}" type="text" class="form-control" placeholder="تعداد محتوا"></div>
+
+                    <div class="col-12 mb-15"><textarea name="post_content" class="form-control" placeholder="محتوای وب سایت">{{ options.post_content }}</textarea></div>
+                    <div>
+                        <div class="my-3">
+                            <label for="allSignIn">
+                                هر کسی میتواند دیدگاه ثبت کند
+                                <input name="enable_comment" value="1" {{#activeCommnets}}{{/activeCommnets}} type="checkbox" name="enable_comment" id="enable_comment">
+                            </label>
+                        </div>
+                        <div class="my-3">
+                            <label for="allSignIn">
+                                هر کسی میتواند ثبت نام کند
+                                <input name="enable_signin" value="1" {{#activeSignin}}{{/activeSignin}} type="checkbox" name="enable_signin" id="enable_signin">
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn btn-danger w-100">ذخیره سازی</button>
+                </form>
+            </div>
+        </div>
+    </div><!-- Revenue Statistics Chart End -->
+</div>
